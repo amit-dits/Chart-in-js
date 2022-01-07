@@ -5,6 +5,11 @@ var myChart = new Chart(ctx, {
         labels: [],
         datasets: [{
             data: [], label: "Programming Languages 2021",
+
+
+
+
+            // amit    jjjjjjjjjjjjjjjjjjjjj
             backgroundColor: [],
             borderColor: [],
             borderWidth: 8,    
