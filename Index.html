@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chart in Javascript </title>
+<style>
+
+
+  .inputdesign{
+color:rgb(188, 191, 221);
+background-color: rgb(55, 55, 73);
+font-size: 15px;
+outline-color: rgb(236, 173, 13);
+margin-top:50px;
+height:30px;
+width:180px;
+  }  
+
+.insertData{
+    color:rgb(248, 248, 248);
+    background-color:rgb(36, 58, 30) ;
+    font-size:larger;
+   padding:5px 11px;
+  
+} 
+
+table#tabledata {
+  width: 61.5%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  text-align: center;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+input.delete{
+  background-color: rgb(170, 39, 159);
+  color:rgb(240, 233, 233);
+  padding:10px 10px;
+  outline-color: rgb(36, 240, 0);
+  font-weight: bolder;
+
+}
+input.update{
+  background-color: rgb(21, 34, 148);
+  color:whitesmoke;
+  padding:10px 10px;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="Chart">
+    <canvas id="myChart" 
+     width="400"
+      height="400"
+      role="img"
+      ></canvas>
+    </div>
+
+    <div class="inputBox">
+    
+<input type="number" class="inputdesign" id="inputData">
+<input type="text" class="inputdesign" id="inputcolor">
+<input type="text" class="inputdesign" id="inputlabel">
+<input type="text" class="inputdesign" id="inputborder">
+<button class="insertData" onclick= updatechart()>Add</button>
+
+</div>
+
+<!-- Tables  -->
+
+
+
+<table id="tabledata" class="table" border="5">
+<thead>
+<th>Numbers</th>
+<th>Color</th>
+<th>Name</th>
+<th>BorderName</th>
+<th>Delete</th>
+<th>Update</th>
+</thead>
+
+
+
+<tbody>
+
+</tbody>
+    </table>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
