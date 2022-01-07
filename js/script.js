@@ -7,7 +7,7 @@ var myChart = new Chart(ctx, {
             data: [], label: "Programming Languages 2021",
             backgroundColor: [],
             borderColor: [],
-            borderWidth: 8,
+            borderWidth: 8,    
         },
         ],
     },
